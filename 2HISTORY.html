@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HellBANK - О банке</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #800000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .back-button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #cc0000;
+        }
+        main {
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 36px;
+            color: #ff0000;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        .section-content {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+        .team-member {
+            background-color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .team-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
+        }
+        .team-member h3 {
+            font-size: 28px;
+            color: #ff0000;
+        }
+        .team-member p {
+            font-size: 18px;
+            color: #fff;
+        }
+        .team-member .description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #ff6666;
+            font-style: italic;
+        }
+        .history-text {
+            font-size: 18px;
+            color: #fff;
+            line-height: 1.6;
+            text-align: justify;
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+        }
+        .history-text p {
+            margin-bottom: 20px;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        footer {
+            background-color: #000;
+            padding: 20px;
+            margin-top: 40px;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">HellBANK</div>
+        <button class="back-button" onclick="window.history.back()">Назад</button>
+    </header>
+    <main>
+        <section class="section-title">
+            История HellBANK
+        </section>
+
+        <section class="section-content">
+            <div class="history-text">
+                <p>Аддский банк (HellBANK) — это слияние двух банков, которые обслуживают разные слои ада. Один из них отвечает за аристократию и 72 демонов Гоэтий, а второй — предназначен для остальных демонов. Это объединение стало возможным благодаря трудам двух великих основателей.</p>
+                <p>Международный банк был основан Кармиллой Кармайн, влиятельным оверлордом ада, известным везде как Князь. Этот банк был создан для демонов всех рас, чтобы обеспечить стабильность и безопасные финансовые операции в аду.</p>
+                <p>Второй банк, Фонд Гоэтий, был основан Принцессой Сиире, семидесятым истинным демоном Гоэтий. Этот банк стал символом поддержки низших слоев ада и активной помощи всем тем, кто в этом нуждается.</p>
+                <p>Объединение этих двух банков стало важным шагом в модернизации ада и обеспечении более цивилизованного общества, где каждый демон может найти своё место и улучшить свою жизнь.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="team-member">
+                <h3>Кармила Кармайн</h3>
+                <p>Влиятельный оверлорд во всем Аду. На данный момент является единственным продавцом оружия во всём аду, включая ангельскую сталь. Она стремится сделать ад более безопасным и цивилизованным.</p>
+                <p class="description">Кармила Кармайн - Князь, основательница Международного банка. Её амбиции и сила сделали её легендой в аду.</p>
+            </div>
+
+            <div class="team-member">
+                <h3>Принцесса Сиире</h3>
+                <p>Семидесятый истинный демон Гоэтий, владелица банка Фонд Гоэтий. Принцесса Сиире является главным казначеем и стремится помочь низшим слоям населения ада.</p>
+                <p class="description">Принцесса Сиире - героиня, которая несмотря на свою высшую аристократию, не забывает о нуждах простых демонов и активно поддерживает их.</p>
+            </div>
+        </section>
+
+        <section class="section-title">
+            История создания HellBANK
+        </section>
+
+        <section class="section-content">
+            <div class="history-text">
+                <p>HellBANK появился как результат слияния двух великих финансовых институтов ада. Объединение было задумано для обеспечения стабильности и безопасности всех демонов. Принцесса Сиире, как глава Фонда Гоэтий, и Кармила Кармайн, основательница Международного банка, работали бок о бок для создания этого величайшего банка, который стал символом нового порядка в аду.</p>
+                <p>Идея слияния была поддержана Глава ВПИ — Archangel, чье имя скрыто в тени, но чьи усилия в организации этого проекта были бесценными. Этот шаг стал революционным для ада, создавая новые возможности для торговли, безопасности и стабильности.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HellBANK. Все права защищены.</p>
+    </footer>
+
+    <script>
+        // Добавляем анимацию появления текста
+        document.addEventListener("DOMContentLoaded", function () {
+            const historyText = document.querySelectorAll('.history-text');
+            historyText.forEach(text => {
+                text.style.animation = 'fadeIn 3s forwards';
+            });
+        });
+    </script>
+</body>
+</html>
